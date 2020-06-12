@@ -1,17 +1,11 @@
 import React from "react"
 
+import LinkBlank from "../link-blank"
 import classes from "./item.module.css"
 
 const Item = props => (
   <h3>
-    <a
-      className={classes.LinkA}
-      target={props.blank ? "_blank" : null}
-      rel={props.blank ? "noopener noreferrer" : null}
-      href={props.href}
-    >
-      {props.title}
-    </a>
+    <LinkBlank href={props.href}>{props.title}</LinkBlank>
     <p className={classes.Datetime}>{props.intro ? props.intro : ""}</p>
   </h3>
 )
