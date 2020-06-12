@@ -28,23 +28,16 @@ const IndexPage = () => (
     </p>
     <p className={classes.Bio}>
       Follow me on{" "}
-      <LinkBlank href="https://twitter.com/matheusguimr" name="Twitter" />
+      <LinkBlank href="https://twitter.com/matheusguimr">Twitter</LinkBlank>,{" "}
+      <LinkBlank href="https://www.instagram.com/matheustguimaraes/">
+        Instagram
+      </LinkBlank>
       ,{" "}
-      <LinkBlank
-        href="https://www.instagram.com/matheustguimaraes/"
-        name="Instagram"
-      />
-      ,{" "}
-      <LinkBlank
-        href="https://www.linkedin.com/in/matheustguimaraes"
-        name="LinkedIn"
-      />{" "}
+      <LinkBlank href="https://www.linkedin.com/in/matheustguimaraes">
+        LinkedIn
+      </LinkBlank>{" "}
       and{" "}
-      <LinkBlank
-        href="http://github.com/matheustguimaraes"
-        name="GitHub"
-      />
-      .
+      <LinkBlank href="http://github.com/matheustguimaraes">GitHub</LinkBlank>.
     </p>
 
     <Section section={<Emoji symbol="Blog 📃" />}>
