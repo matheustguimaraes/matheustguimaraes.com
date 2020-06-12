@@ -1,0 +1,16 @@
+.Datetime {
+    color: gray;
+}
+
+.LinkA {
+    color: red;
+    font-weight: bold;
+}
+
+p.bio {
+    font-size: 1.1em;
+    font-weight: 400;
+    /* margin: 1em 0; */
+    line-height: 26px;
+}
+
