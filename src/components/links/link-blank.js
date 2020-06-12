@@ -1,16 +1,16 @@
 import React from "react"
 
+import classes from "./link.module.css"
+
 const LinkBlank = props => (
-  <h3>
-    <a
-      target={props.blank ? "_blank" : null}
-      rel={props.blank ? "noopener noreferrer" : null}
-      href={props.href}
-    >
-      {props.title}
-    </a>
-    <p>{props.intro ? props.intro : ""}</p>
-  </h3>
+  <a
+    className={classes.LinkA}
+    target="_blank"
+    rel="noopener noreferrer"
+    href={props.href}
+  >
+    {props.children}
+  </a>
 )
 
 export default LinkBlank
