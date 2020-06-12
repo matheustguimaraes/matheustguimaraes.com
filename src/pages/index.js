@@ -1,9 +1,14 @@
 import React from "react"
 // import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-// import Image from "../components/image"
 import SEO from "../components/seo"
+import Layout from "../components/layout"
+import Emoji from "../components/emoji"
+import LinkBlank from "../components/links/link-blank"
+import LinkSocialMedia from "../components/links/link-social-media"
+import Section from "../components/section/section"
+// import Image from "../components/image"
+
 import "./index.module.css"
 
 const IndexPage = () => (
@@ -12,109 +17,73 @@ const IndexPage = () => (
     <h1>MATHEUS T. GUIMARÃES</h1>
     <h2>Hey, I'm Matheus!</h2>
     <p>
-      <b>Software Developer</b> and <b>Computer Science</b> student from Brazil.
-      🇧🇷
+      <b>Software Developer</b> and <b>Computer Science</b> student from Brazil.{" "}
+      <Emoji symbol="🇧🇷" />
       <br />
-      Currently working as a Software Developer at LAPISCO. ⚡ <br />
+      Currently working as a Software Developer at LAPISCO.{" "}
+      <Emoji symbol="⚡" />
+      <br />
       Previously worked with Computer Vision, being part of 3 research papers
-      published as an undergrad student. 📜
+      published as an undergrad student. <Emoji symbol="📜" />
     </p>
-    <p class="bio">
+    <p>
       Follow me on{" "}
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://twitter.com/matheusguimr"
-      >
-        Twitter
-      </a>
+      <LinkSocialMedia href="https://twitter.com/matheusguimr" name="Twitter" />
       ,{" "}
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
+      <LinkSocialMedia
         href="https://www.instagram.com/matheustguimaraes/"
-      >
-        Instagram
-      </a>
+        name="Instagram"
+      />
       ,{" "}
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
+      <LinkSocialMedia
         href="https://www.linkedin.com/in/matheustguimaraes"
-      >
-        LinkedIn
-      </a>{" "}
+        name="LinkedIn"
+      />{" "}
       and{" "}
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
+      <LinkSocialMedia
         href="http://github.com/matheustguimaraes"
-      >
-        GitHub
-      </a>
+        name="GitHub"
+      />
       .
     </p>
-    <h2>Blog 📃</h2>
-    <h3>
-      <a href="posts/install-cuda-ubuntu16.html">
-        How to install CUDA 10.0 and cuDNN v7.4.2 on ubuntu 16.04
-      </a>
-      <p id="datetime">May 18, 2020</p>
-    </h3>
-    <h3>
-      <a href="posts/first-blog-post.html">My first blog post</a>
-      <p id="datetime">May 18, 2020</p>
-    </h3>
-    <h2>Projects 🚀</h2>
-    <h3>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="websites/color-game/colorGame.html"
-      >
-        The great RGB color game
-      </a>
-      <p id="datetime">Find the color matching the RGB values.</p>
-    </h3>
-    <h3>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="websites/bootstrap-gallery/gallery.html"
-      >
-        Bootstrap galery
-      </a>
-      <p id="datetime">Instagram like gallery using only Bootstrap.</p>
-    </h3>
-    <h3>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://github.com/matheustguimaraes/burger-builder"
-      >
-        Burger Builder
-      </a>
-      <p id="datetime">
-        Build a burger in the browser! Website created using React and Redux.
-        [Not hosted yet]
-      </p>
-    </h3>
 
-    <h3>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
+    <Section section={<Emoji symbol="Blog 📃" />}>
+      <LinkBlank
+        href="posts/install-cuda-ubuntu16.html"
+        title="How to install CUDA 10.0 and cuDNN v7.4.2 on ubuntu 16.04"
+        intro="May 18, 2020"
+      />
+      <LinkBlank
+        href="posts/first-blog-post.html"
+        title="My first blog post"
+        intro="May 18, 2020"
+      />
+    </Section>
+
+    <Section section={<Emoji symbol="Projects 🚀" />}>
+      <LinkBlank
+        href="websites/color-game/colorGame.html"
+        title="The great RGB color game"
+        intro="Find the color matching the RGB values"
+      />
+      <LinkBlank
+        href="websites/bootstrap-gallery/gallery.html"
+        title="Bootstrap galery"
+        intro="Instagram like gallery using only Bootstrap."
+      />
+      <LinkBlank
+        href="https://github.com/matheustguimaraes/burger-builder"
+        title="Burger Builder"
+        intro="Build a burger in the browser! Website created using React and Redux.
+      [Not hosted yet]"
+      />
+      <LinkBlank
         href="https://github.com/matheustguimaraes/yelpcamp"
-      >
-        Yelpcamp
-      </a>
-      <p id="datetime">
-        Explore, comment and create campgrounds photos. [Not hosted yet]
-      </p>
-    </h3>
-    <h3>
-      <a href="projects.html">And more...</a>
-    </h3>
+        title="Yelpcamp"
+        intro="Explore, comment and create campgrounds photos. [Not hosted yet]"
+      />
+      <LinkBlank href="projects.html" title="More..." />
+    </Section>
   </Layout>
 )
 
