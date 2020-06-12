@@ -1,13 +1,13 @@
 import React from "react"
 
-const LinkBlank = (props) => (
+const LinkSocialMedia = (props) => (
     <a
     target="_blank"
     rel="noopener noreferrer"
     href={props.href}
   >
-    {props.children}
+    {props.name}
   </a>
 )
 
-export default LinkBlank;
+export default LinkSocialMedia;
