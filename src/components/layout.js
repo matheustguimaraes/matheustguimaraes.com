@@ -1,48 +1,62 @@
 /**
  * Layout component that queries for data
- * with Gatsby's useStaticQuery component
+ * with Gatsby's StaticQuery component
  *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
+ * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
 import React from "react"
 import PropTypes from "prop-types"
-// import { useStaticQuery, graphql } from "gatsby"
-// import Header from "./header"
+import { StaticQuery, graphql } from "gatsby"
+import styled from "@emotion/styled"
 
-// import classes from "./layout.module.css"
+import Header from "./header"
+import "./layout.css"
 
-const Layout = ({ children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
+const Content = styled.div`
+  margin: 0 auto;
+  max-width: 860px;
+  padding: 0 1.0875rem 1rem;
+  padding-top: 0;
+`
 
-  return (
-    <>
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
-    </>
-  )
-}
+const GatsbyLink = styled.a`
+  margin-left: 5px;
+`
+
+const Footer = styled.footer`
+  display: flex;
+  justify-content: center;
+`
+
+const Layout = ({ children }) => (
+  <StaticQuery
+    query={graphql`
+      query SiteTitleQuery {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `}
+    render={data => (
+      <>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <Content>
+          <main>{children}</main>
+          <Footer>
+            <p>
+              © {new Date().getFullYear()}, Built with
+              {` `}
+            </p>
+            <GatsbyLink href="https://www.gatsbyjs.org">Gatsby</GatsbyLink>
+          </Footer>
+        </Content>
+      </>
+    )}
+  />
+)
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
