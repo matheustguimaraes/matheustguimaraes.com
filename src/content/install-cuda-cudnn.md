@@ -1,14 +1,15 @@
 ---
-slug: "/blog/install-cuda-cudnn-ubuntu"
-date: "2019-05-04"
 title: "Install CUDA 10.0 and cuDNN v7.4.2 on Ubuntu 16.04"
+date: "2019-05-25"
+draft: false
+path: "/blog/cuda-cudnn-ubuntu-installation"
 ---
 
 *Originaly posted on https://gist.github.com/matheustguimaraes/43e0b65aa534db4df2918f835b9b361d*
 
 ## Install the latest NVIDIA driver
 Update package lists, download and install NVIDIA driver
-```
+```sh
 sudo apt-get update
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt install nvidia-410
@@ -16,18 +17,18 @@ sudo apt install nvidia-410
 
 ### Reboot
 Restart the computer
-```
+```sh
 reboot
 ```
 
 ### Testing
 Lets test if all worked well
-```
+```sh
 nvidia-smi
 ```
 If appears something like:
 
-```
+```sh
 Sun Jan 27 15:33:47 2019       
 +-----------------------------------------------------------------------------+
 | NVIDIA-SMI 410.78       Driver Version: 410.78       CUDA Version: 10.0     |
@@ -64,12 +65,12 @@ You have to make some choices about your machine to download the file
 
 ### Go to the download folder
 After download the file, go to the download folder:
-```
+```sh
 cd Downloads
 ```
 
 ### Run the file
-```
+```sh
 sudo sh cuda_10.0.130_410.48_linux.run
 ```
 
@@ -84,13 +85,13 @@ Leave the rest as default. ``` ENTER ```
 
 ### Testing
 Let's test if everything worked well
-```
+```sh
 cd /usr/local/cuda/samples
 sudo make -k
 ./deviceQuery
 ```
 If appears something like:
-```
+```sh
 ./deviceQuery Starting...
 
  CUDA Device Query (Runtime API) version (CUDART static linking)
@@ -151,25 +152,25 @@ Download the three packages:
 - cuDNN Code Samples and User Guide for Ubuntu16.04 (Deb)
 
 ### Go to downloads folder
-```
+```sh
 cd Downloads
 ```
 
 ### Install the .deb packages
-```
+```sh
 sudo dpkg -i libcudnn7_7.4.2.24-1+cuda10.0_amd64.deb
 sudo dpkg -i libcudnn7-dev_7.4.2.24-1+cuda10.0_amd64.deb 
 sudo dpkg -i libcudnn7-doc_7.4.2.24-1+cuda10.0_amd64.deb
 ```
 
 ### Export CUDA path
-```
+```sh
 export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64:$LD_LIBRARY_PATH
 export PATH=/usr/local/cuda-10.0/bin:$PATH
 ```
 
 ### Reload bash
-```
+```sh
 source ~/.bashrc
 ```
 
@@ -177,7 +178,7 @@ source ~/.bashrc
 Go in your ```/usr/src``` and copy the 'cudnn_samples_v7' to any folder you want,
 to test if all worked well. In my case, I paste it in 'Desktop' folder.
 
-```
+```sh
 cd Desktop/cudnn_samples_v7/mnistCUDNN/
 make clean && make
 ./mnistCUDNN
@@ -185,7 +186,7 @@ make clean && make
 
 If appears something like:
 
-```
+```sh
 cudnnGetVersion() : 7402 , CUDNN_VERSION from cudnn.h : 7402 (7.4.2)
 Host compiler version : GCC 5.4.0
 There are 1 CUDA capable devices on your machine :

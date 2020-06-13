@@ -1,7 +1,8 @@
 ---
-slug: "/blog/my-first-post"
-date: "2019-05-04"
-title: "My first blog post"
+title: "First blog post"
+date: "2019-05-18"
+draft: false
+path: "/blog/first-post"
 ---
 
 # This is my first blog post
