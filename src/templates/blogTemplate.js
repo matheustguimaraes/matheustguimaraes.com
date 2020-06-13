@@ -5,13 +5,19 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 export const pageQuery = graphql`
-  query($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+  query($path: String!) {
+    markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
+      excerpt(pruneLength: 160)
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        slug
+        date(formatString: "DD MMMM, YYYY")
+        path
         title
+      }
+      fields {
+        readingTime {
+          text
+        }
       }
     }
   }
@@ -69,8 +75,7 @@ export default ({ data }) => {
       <Content>
         <MarkedHeader>{post.frontmatter.title}</MarkedHeader>
         <HeaderDate>
-          {/* {post.frontmatter.date} - {post.fields.readingTime.text} */}
-          {post.frontmatter.date}
+          {post.frontmatter.date} - {post.fields.readingTime.text}
         </HeaderDate>
         <MarkdownContent dangerouslySetInnerHTML={{ __html: post.html }} />
       </Content>
