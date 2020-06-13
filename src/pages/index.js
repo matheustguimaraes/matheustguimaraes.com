@@ -9,7 +9,7 @@ import Section from "../components/section/section"
 // import Image from "../components/image"
 
 import classes from "./index.module.css"
-import LinkBlank from "../components/link-blank"
+import LinkBlank from "../components/listBlank"
 
 const IndexPage = () => (
   <Layout>
