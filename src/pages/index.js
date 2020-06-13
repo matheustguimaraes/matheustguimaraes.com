@@ -47,7 +47,7 @@ const IndexPage = () => (
         intro="May 18, 2020"
       />
       <Item
-        href="posts/first-blog-post.html"
+        href="blog/my-first-post"
         title="My first blog post"
         intro="May 18, 2020"
       />
