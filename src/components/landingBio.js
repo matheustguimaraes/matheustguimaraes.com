@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 
-import Emoji from "../components/emoji"
+import Emoji from "./emoji"
 
 const Container = styled.div`
   text-align: center;
