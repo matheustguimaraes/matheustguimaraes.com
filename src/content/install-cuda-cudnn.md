@@ -1,6 +1,6 @@
 ---
 title: "Install CUDA 10.0 and cuDNN v7.4.2 on Ubuntu 16.04"
-date: "2019-05-25"
+date: "2020-05-20"
 draft: false
 path: "/blog/cuda-cudnn-ubuntu-installation"
 ---

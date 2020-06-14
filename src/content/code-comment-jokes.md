@@ -1,6 +1,6 @@
 ---
 title: "Jokes in commented code"
-date: "2020-02-03"
+date: "2020-04-03"
 draft: false
 path: "/blog/jokes-commented-code"
 ---

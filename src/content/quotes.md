@@ -1,6 +1,6 @@
 ---
 title: "Quotes"
-date: "2020-01-15"
+date: "2020-02-15"
 draft: false
 path: "/blog/quotes"
 ---
