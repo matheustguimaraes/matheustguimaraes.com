@@ -47,10 +47,24 @@ const Layout = ({ children }) => (
           <main>{children}</main>
           <Footer>
             <p>
-              © {new Date().getFullYear()}, Built with
-              {` `}
+              © {new Date().getFullYear()}, Follow me on
+              <GatsbyLink href="https://twitter.com/matheusguimr">
+                Twitter
+              </GatsbyLink>
+              ,
+              <GatsbyLink href="https://www.instagram.com/matheustguimaraes">
+                Instagram
+              </GatsbyLink>
+              ,
+              <GatsbyLink href="https://www.linkedin.com/in/matheustguimaraes">
+                LinkedIn
+              </GatsbyLink>
+              {` `} and
+              <GatsbyLink href="http://github.com/matheustguimaraes">
+                GitHub
+              </GatsbyLink>
+              .
             </p>
-            <GatsbyLink href="https://www.gatsbyjs.org">Gatsby</GatsbyLink>
           </Footer>
         </Content>
       </>
