@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 
+import LinkBlank from "./linkBlank"
 import Header from "./header"
 import "./layout.css"
 
@@ -20,7 +21,7 @@ const Content = styled.div`
   padding-top: 0;
 `
 
-const GatsbyLink = styled.a`
+const GatsbyLink = styled(LinkBlank)`
   margin-left: 5px;
 `
 
@@ -47,19 +48,19 @@ const Layout = ({ children }) => (
           <main>{children}</main>
           <Footer>
             <p>
-              © {new Date().getFullYear()}, Follow me on
+              © {new Date().getFullYear()}, Follow me on{` `}
               <GatsbyLink href="https://twitter.com/matheusguimr">
                 Twitter
               </GatsbyLink>
-              ,
+              ,{` `}
               <GatsbyLink href="https://www.instagram.com/matheustguimaraes">
                 Instagram
               </GatsbyLink>
-              ,
+              ,{` `}
               <GatsbyLink href="https://www.linkedin.com/in/matheustguimaraes">
                 LinkedIn
               </GatsbyLink>
-              {` `} and
+              {` `} and {` `}
               <GatsbyLink href="http://github.com/matheustguimaraes">
                 GitHub
               </GatsbyLink>
