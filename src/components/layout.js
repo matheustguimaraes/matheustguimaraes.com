@@ -48,21 +48,22 @@ const Layout = ({ children }) => (
           <main>{children}</main>
           <Footer>
             <p>
-              © {new Date().getFullYear()}, Follow me on{` `}
+              {/* © {new Date().getFullYear()},  */}
+              follow me on{` `}
               <GatsbyLink href="https://twitter.com/matheusguimr">
-                Twitter
+                twitter
               </GatsbyLink>
               ,{` `}
               <GatsbyLink href="https://www.instagram.com/matheustguimaraes">
-                Instagram
+                instagram
               </GatsbyLink>
               ,{` `}
               <GatsbyLink href="https://www.linkedin.com/in/matheustguimaraes">
-                LinkedIn
+                linkedin
               </GatsbyLink>
               {` `} and {` `}
               <GatsbyLink href="http://github.com/matheustguimaraes">
-                GitHub
+                github
               </GatsbyLink>
               .
             </p>
