@@ -32,16 +32,14 @@ const IndexPage = () => (
           <h1>About</h1>
           <p>
             Hey! I am {data.site.siteMetadata.title},{" "}
-            <b>{data.site.siteMetadata.subtitle}</b> and Computer Science
-            Student from Brazil.
+            <b>{data.site.siteMetadata.subtitle}</b>, computer vision researcher
+            and computer science student from Brazil.
             {` `}
             <Emoji symbol="🇧🇷" /> <br />
             Below, I list some of the projects and publications I worked on
             recently.
           </p>
-          <p>
-            If you want to reach out by email: matheusguimr[at]gmail.com
-          </p>
+          <p>If you want to reach out by email: matheusguimr[at]gmail.com</p>
           <h2>Most recent personal projects</h2>
           <AboutSection
             title="Burger Builder"
