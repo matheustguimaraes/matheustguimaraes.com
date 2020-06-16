@@ -57,10 +57,10 @@ const Layout = ({ children }) => (
               <GatsbyLink href="https://www.instagram.com/matheustguimaraes">
                 instagram
               </GatsbyLink>
-              ,{` `}
+              {/* ,{` `}
               <GatsbyLink href="https://www.linkedin.com/in/matheustguimaraes">
                 linkedin
-              </GatsbyLink>
+              </GatsbyLink> */}
               {` `} and {` `}
               <GatsbyLink href="http://github.com/matheustguimaraes">
                 github
