@@ -76,10 +76,11 @@ const Header = ({ siteTitle }) => (
   <SiteHeader>
     <Content>
       <p>
-        <HomeLink to="/">{siteTitle}</HomeLink>
-        <NavLink to="/blog">Blog</NavLink>
+        <HomeLink to="/">home</HomeLink>
+        <NavLink to="/blog">blog</NavLink>
+        <NavLink to="/about">about</NavLink>
         <TwitterLink href="https://twitter.com/matheusguimr">
-          Twitter
+          twitter
         </TwitterLink>
       </p>
     </Content>
