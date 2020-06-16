@@ -45,7 +45,7 @@ const LandingBio = () => (
         <Container>
           <NameHeader>{data.site.siteMetadata.title} T. Guimarães</NameHeader>
           <Description>
-            Hey! I am a <b>{data.site.siteMetadata.subtitle}</b> from Brazil.{` `}
+            <b>{data.site.siteMetadata.subtitle}</b> {` `}
             <Emoji symbol="🇧🇷" />
           </Description>
         </Container>
