@@ -56,28 +56,28 @@ const IndexPage = () => (
             date="2020"
           >
             Explore, comment and create campgrounds photos. Final project in The
-            Web Developer Bootcamp
+            Web Developer Bootcamp.
           </AboutSection>
           <AboutSection
             title="The Great RGB color game"
             href="https://unruffled-panini-1427f0.netlify.app"
             date="2019"
           >
-            Bootstrap, jQuery, HTML5, CSS3
+            Guess the right color just by looking at the RGB values.
           </AboutSection>
           <AboutSection
             title="The Bootstrap gallery"
             href="https://nervous-volhard-c2d0ed.netlify.app"
             date="2019"
           >
-            Bootstrap, HTML5, CSS3
+            Instagram like gallery using Bootstrap
           </AboutSection>
           <AboutSection
             title="Museum of Candy"
             href="https://musing-jackson-9eaf2f.netlify.app"
             date="2019"
           >
-            Bootstrap, jQuery, HTML5, CSS3
+            Museum of Candy fictional landing page
           </AboutSection>
           <h2>Most recent publications</h2>
           <AboutSection
