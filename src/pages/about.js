@@ -52,11 +52,11 @@ const IndexPage = () => (
           </AboutSection>
           <AboutSection
             title="Yelpcamp"
-            href="https://github.com/matheustguimaraes/yelpcamp"
+            href="https://yelpcamp-matheus.herokuapp.com/"
             date="2020"
           >
             Explore, comment and create campgrounds photos. Final project in The
-            Web Developer Bootcamp [Not hosted yet]
+            Web Developer Bootcamp
           </AboutSection>
           <AboutSection
             title="The Great RGB color game"
