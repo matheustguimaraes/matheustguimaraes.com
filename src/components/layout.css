@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 code {
   background-color: hsla(0, 0%, 0%, 0.04);
 }
 
 body {
   margin: 0;
-  font-family: "Nunito", "Avenir", "Helvetica", "sans-serif";
+  font-family: "Roboto", "Avenir", "Helvetica", "sans-serif";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
