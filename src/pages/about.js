@@ -42,6 +42,13 @@ const IndexPage = () => (
           <p>If you want to reach out by email: matheusguimr[at]gmail.com</p>
           <h2>Most recent personal projects</h2>
           <AboutSection
+            title="Sr. Matuto"
+            href="https://srmatuto.com"
+            date="2020"
+          >
+            Restaurant Sr. Matuto
+          </AboutSection>
+          <AboutSection
             title="Burger Builder"
             href="https://github.com/matheustguimaraes/burger-builder"
             date="2020"
