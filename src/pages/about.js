@@ -54,8 +54,19 @@ const IndexPage = () => (
             href="https://srmatuto.com"
             date="2020"
           >
-            Restaurant Sr. Matuto
+            Website created to display the menu of Sr. Matuto restaurant in
+            mobile devices. I made all process since buy the domain, develop the
+            website to ship it.
           </AboutSection>
+          <AboutSection
+            title="$10 dollar shirt"
+            href="https://10dollarshirt.netlify.app/"
+            date="2020"
+          >
+            $10 dollar shirt is a website made as a joke about the complexity to
+            create a website. I do not actually sell shirts.
+          </AboutSection>
+
           <AboutSection
             title="Burger Builder"
             href="https://github.com/matheustguimaraes/burger-builder"
