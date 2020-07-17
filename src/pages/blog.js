@@ -36,7 +36,15 @@ const ReadingTime = styled.h5`
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Blog" />
+      <SEO
+        title="Blog"
+        keywords={[
+          `Matheus T. Guimarães`,
+          `Matheus Guimarães`,
+          `Matheus`,
+          `blog`,
+        ]}
+      />
       <Content>
         <h1>Blog</h1>
         {data.allMarkdownRemark.edges

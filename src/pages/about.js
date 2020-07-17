@@ -27,7 +27,15 @@ const IndexPage = () => (
     `}
     render={data => (
       <Layout>
-        <SEO title="About" />
+        <SEO
+          title="About"
+          keywords={[
+            `Matheus T. Guimarães`,
+            `Matheus Guimarães`,
+            `Matheus`,
+            `blog`,
+          ]}
+        />
         <Content>
           <h1>About</h1>
           <p>
