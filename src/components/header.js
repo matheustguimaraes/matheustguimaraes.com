@@ -76,7 +76,7 @@ const Header = ({ siteTitle }) => (
   <SiteHeader>
     <Content>
       <p>
-        <HomeLink to="/">{siteTitle.toLowerCase()}</HomeLink>
+        <HomeLink to="/">home</HomeLink>
         <NavLink to="/about">about</NavLink>
         <NavLink to="/blog">blog</NavLink>
         <TwitterLink href="https://twitter.com/matheusguimr">
