@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Matheus`,
-    subtitle: `full stack developer`,
-    description: `Matheus T. Guimarães blog and website`,
-    author: [`@matheustguimaraes`, `@matheusguimr`],
+    title: `Matheus T. Guimarães`,
+    subtitle: `Full Stack Developer`,
+    description: `Matheus T. Guimarães - Full Stack Developer`,
+    author: [`@matheustguimaraes`, `@matheusguimr`, `matheustguimaraes`],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

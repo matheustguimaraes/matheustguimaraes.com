@@ -35,7 +35,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title} T. Guimarães | matheustguimaraes.com`}
+      titleTemplate={`${site.siteMetadata.description}`}
       meta={[
         {
           name: `description`,
