@@ -66,6 +66,10 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: site.siteMetadata.author,
         },
         {
+          name: `og:author`,
+          content: site.siteMetadata.author,
+        },
+        {
           name: `twitter:title`,
           content: title,
         },
