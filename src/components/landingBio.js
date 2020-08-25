@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
+import Img from "./image"
 
 import Emoji from "./emoji"
 
@@ -24,7 +25,7 @@ const Description = styled.p`
 `
 
 const NameHeader = styled.h1`
-  font-size: 3.5rem;
+  font-size: 2.0rem;
   margin-bottom: 0;
 `
 
@@ -43,6 +44,7 @@ const LandingBio = () => (
     render={data => (
       <OuterContainer>
         <Container>
+          <Img />
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
           <Description>
             <b>{data.site.siteMetadata.subtitle.toLowerCase()}</b> {` `}
