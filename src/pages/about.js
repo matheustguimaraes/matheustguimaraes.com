@@ -6,6 +6,7 @@ import Emoji from "../components/emoji"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AboutSection from "../components/aboutSection"
+import LinkBlank from "../components/linkBlank"
 
 const IndexPage = () => (
   <StaticQuery
@@ -34,14 +35,23 @@ const IndexPage = () => (
           <h1>About</h1>
           <p>
             Hey! I am {data.site.siteMetadata.title},{" "}
-            <b>{data.site.siteMetadata.subtitle}</b>, computer vision researcher
-            and computer science student from Brazil.
+            <b>{data.site.siteMetadata.subtitle}</b> from Brazil
             {` `}
-            <Emoji symbol="🇧🇷" /> <br />
+            <Emoji symbol="🇧🇷" />
+            <br />
+            I previously worked as junior researcher, with papers published in
+            areas such machine learning, computer vision and image segmentation.
+            <br />
             Below, I list some of the projects and publications I worked on
             recently.
+            <br />
+            <br />
+            Email: matheusguimr[at]gmail.com
+            <br />
+            PGP keys and more at{` `}
+            <LinkBlank href="https://keybase.io/matheusguimaraes">Keybase</LinkBlank>
           </p>
-          <p>If you want to reach out by email: matheusguimr[at]gmail.com</p>
+
           <h2>Most recent personal projects</h2>
           <AboutSection
             title="Sr. Matuto"
@@ -99,27 +109,26 @@ const IndexPage = () => (
           >
             Museum of Candy fictional landing page
           </AboutSection>
-          <h2>Most recent publications</h2>
+          <h2>Most recent scientific publications</h2>
+          <p>
+            Most of papers covers topics like Machine Learning Computer Vision
+            and Medical imaging segmantion
+          </p>
+          <AboutSection
+            title="Fast fully automatic skin lesions segmentation probabilistic with Parzen window"
+            href="https://doi.org/10.1016/j.compmedimag.2020.101774"
+            date="2020"
+          ></AboutSection>
           <AboutSection
             title="A high-efficiency energy and storage approach for IoT applications of facial recognition"
             href="https://doi.org/10.1016/j.imavis.2020.103899"
             date="2020"
-          >
-            This work introduces a high-efficiency approach for face recognition
-            applications based on features using a recent algorithm called Floor
-            of Log (FoL). ...
-          </AboutSection>
-
+          ></AboutSection>
           <AboutSection
             title="A New Fast Morphological Geodesic Active Contour Method for Lung CT Image Segmentation"
             href="http://dx.doi.org/10.1016/j.measurement.2019.05.078"
             date="2019"
-          >
-            This work propose a new adaptive approach to lung segmentation based
-            on active contour method adaptive (ACM), non-parametric and without
-            previous training using the new Fuzzy Border Detector, called Fast
-            Morphological Geodesic Active Contour (FGAC). ...
-          </AboutSection>
+          ></AboutSection>
         </Content>
       </Layout>
     )}

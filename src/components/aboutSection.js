@@ -26,8 +26,8 @@ const MarkerHeader = styled.h3`
   background-image: linear-gradient(
     -100deg,
     rgba(120, 255, 0, 0.15),
-    rgba(255, 0, 0, 0.8) 100%,
-    rgba(255, 100, 255, 0.25)
+    rgba(255, 0, 0, 80) 100%,
+    rgba(255, 0, 0, 80)
   );
 `
 
