@@ -3,6 +3,18 @@ import styled from "@emotion/styled"
 
 import LinkBlank from "./linkBlank"
 
+const aboutSection = props => (
+  <div>
+    <GatsbyLink href={props.href}>
+      <MarkerHeader>{props.title} </MarkerHeader>
+    </GatsbyLink>
+    <div>
+      <PostDate>{props.date}</PostDate>
+    </div>
+    <p>{props.children ? props.children : ""}</p>
+  </div>
+)
+
 const PostDate = styled.h5`
   display: inline;
   color: black;
@@ -24,17 +36,5 @@ const GatsbyLink = styled(LinkBlank)`
   text-decoration: none;
   color: inherit;
 `
-
-const aboutSection = props => (
-  <div>
-    <GatsbyLink href={props.href}>
-      <MarkerHeader>{props.title} </MarkerHeader>
-    </GatsbyLink>
-    <div>
-      <PostDate>{props.date}</PostDate>
-    </div>
-    <p>{props.children ? props.children : ""}</p>
-  </div>
-)
 
 export default aboutSection

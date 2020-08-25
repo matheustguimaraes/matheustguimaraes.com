@@ -14,22 +14,6 @@ import LinkBlank from "./linkBlank"
 import Header from "./header"
 import "./layout.css"
 
-const Content = styled.div`
-  margin: 0 auto;
-  max-width: 860px;
-  padding: 0 1.0875rem 1rem;
-  padding-top: 0;
-`
-
-const GatsbyLink = styled(LinkBlank)`
-  margin-left: 5px;
-`
-
-const Footer = styled.footer`
-  display: flex;
-  justify-content: center;
-`
-
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -73,6 +57,22 @@ const Layout = ({ children }) => (
     )}
   />
 )
+
+const Content = styled.div`
+  margin: 0 auto;
+  max-width: 860px;
+  padding: 0 1.0875rem 1rem;
+  padding-top: 0;
+`
+
+const GatsbyLink = styled(LinkBlank)`
+  margin-left: 5px;
+`
+
+const Footer = styled.footer`
+  display: flex;
+  justify-content: center;
+`
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

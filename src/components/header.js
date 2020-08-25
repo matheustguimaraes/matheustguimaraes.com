@@ -3,6 +3,21 @@ import styled from "@emotion/styled"
 import PropTypes from "prop-types"
 import React from "react"
 
+const Header = ({ siteTitle }) => (
+  <SiteHeader>
+    <Content>
+      <p>
+        <HomeLink to="/">home</HomeLink>
+        <NavLink to="/about">about</NavLink>
+        <NavLink to="/blog">blog</NavLink>
+        <TwitterLink href="https://twitter.com/matheusguimr">
+          twitter
+        </TwitterLink>
+      </p>
+    </Content>
+  </SiteHeader>
+)
+
 const Content = styled.div`
   max-width: 860px;
   padding: 1rem 1.0875rem;
@@ -71,21 +86,6 @@ const SiteHeader = styled.header`
   align-content: center;
   justify-content: center;
 `
-
-const Header = ({ siteTitle }) => (
-  <SiteHeader>
-    <Content>
-      <p>
-        <HomeLink to="/">home</HomeLink>
-        <NavLink to="/about">about</NavLink>
-        <NavLink to="/blog">blog</NavLink>
-        <TwitterLink href="https://twitter.com/matheusguimr">
-          twitter
-        </TwitterLink>
-      </p>
-    </Content>
-  </SiteHeader>
-)
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

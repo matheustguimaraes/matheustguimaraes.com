@@ -7,12 +7,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AboutSection from "../components/aboutSection"
 
-const Content = styled.div`
-  margin: 0 auto;
-  max-width: 860px;
-  padding: 1.45rem 1.0875rem;
-`
-
 const IndexPage = () => (
   <StaticQuery
     query={graphql`
@@ -131,5 +125,11 @@ const IndexPage = () => (
     )}
   />
 )
+
+const Content = styled.div`
+  margin: 0 auto;
+  max-width: 860px;
+  padding: 1.45rem 1.0875rem;
+`
 
 export default IndexPage
