@@ -1,5 +1,5 @@
 ---
-title: "How to enable CORS in Flask"
+title: "Fast way to enable CORS in Flask servers"
 date: "2020-08-27"
 draft: false
 path: "/blog/flask-cors"
