@@ -2,16 +2,15 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 
-import Emoji from "../components/emoji"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AboutSection from "../components/aboutSection"
-import LinkBlank from "../components/linkBlank"
+// import LinkBlank from "../components/linkBlank"
 
 const IndexPage = () => (
   <StaticQuery
     query={graphql`
-      query aboutSiteTitle {
+      query aboutProjectss {
         site {
           siteMetadata {
             title
@@ -32,24 +31,9 @@ const IndexPage = () => (
           ]}
         />
         <Content>
-          <h1>About</h1>
+          <h1>Projects</h1>
           <p>
-            Hey! I am {data.site.siteMetadata.title},{" "}
-            <b>{data.site.siteMetadata.subtitle}</b> from Brazil
-            {` `}
-            <Emoji symbol="🇧🇷" />
-            <br />
-            I previously worked as junior researcher, with papers published in
-            areas such machine learning, computer vision and image segmentation.
-            <br />
-            Below, I list some of the projects and publications I worked on
-            recently.
-            <br />
-            <br />
-            Email: matheusguimr[at]gmail.com
-            <br />
-            PGP keys and more at{` `}
-            <LinkBlank href="https://keybase.io/matheusguimaraes">Keybase</LinkBlank>
+            To ask about any project, email me at matheusguimr[at]gmail.com
           </p>
 
           <h2>Most recent personal projects</h2>
@@ -70,7 +54,14 @@ const IndexPage = () => (
             $10 dollar shirt is a website made as a joke about the complexity to
             create a website. I do not actually sell shirts.
           </AboutSection>
-
+          <AboutSection
+            title="Yelpcamp"
+            href="https://yelpcamp-matheus.herokuapp.com/"
+            date="2020"
+          >
+            Explore, comment and create campgrounds photos. Final project in The
+            Web Developer Bootcamp.
+          </AboutSection>
           <AboutSection
             title="Burger Builder"
             href="https://github.com/matheustguimaraes/burger-builder"
@@ -79,14 +70,6 @@ const IndexPage = () => (
             Build a burger in the browser! Website created using React and
             Redux. Final project in React - The Complete Guide course [Not
             hosted yet]
-          </AboutSection>
-          <AboutSection
-            title="Yelpcamp"
-            href="https://yelpcamp-matheus.herokuapp.com/"
-            date="2020"
-          >
-            Explore, comment and create campgrounds photos. Final project in The
-            Web Developer Bootcamp.
           </AboutSection>
           <AboutSection
             title="The Great RGB color game"
@@ -114,6 +97,11 @@ const IndexPage = () => (
             Most of papers covers topics like Machine Learning Computer Vision
             and Medical imaging segmantion
           </p>
+          <AboutSection
+            title="An Optimized Approach to Huntington's Disease Detecting via Audio Signals Processing with Dimensionality Reduction "
+            href="#"
+            date="2020"
+          ></AboutSection>
           <AboutSection
             title="Fast fully automatic skin lesions segmentation probabilistic with Parzen window"
             href="https://doi.org/10.1016/j.compmedimag.2020.101774"
