@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 import Img from "./image"
+import LinkBlank from "../components/linkBlank"
 
 import Emoji from "./emoji"
 
@@ -24,9 +25,20 @@ const LandingBio = () => (
           <Img />
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
           <Description>
-            <b>{data.site.siteMetadata.subtitle.toLowerCase()}</b> {` `}
-            <Emoji symbol="🇧🇷" />
+            <b>{data.site.siteMetadata.subtitle}</b>
           </Description>
+          <p>
+            <Emoji symbol="👋" />
+            {` `}
+            Hey! My name is Matheus Guimarães. I'm a {` `}
+            <b>{data.site.siteMetadata.subtitle}</b> living in Brazil
+            {` `}
+            <Emoji symbol="🇧🇷" />
+            <br />
+            Currently working as a Full Stack Developer at LAPISCO/Ceará state
+            gov partnership. Previously, Full Stack Developer at LAPISCO/Locktec
+            partnership.
+          </p>
         </Container>
       </OuterContainer>
     )}
