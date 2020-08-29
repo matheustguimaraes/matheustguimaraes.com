@@ -8,8 +8,8 @@ const Header = ({ siteTitle }) => (
     <Content>
       <p>
         <HomeLink to="/">home</HomeLink>
-        <NavLink to="/about">about</NavLink>
         <NavLink to="/blog">blog</NavLink>
+        <NavLink to="/projects">projects</NavLink>
         <TwitterLink href="https://twitter.com/matheusguimr">
           twitter
         </TwitterLink>
