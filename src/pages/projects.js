@@ -32,9 +32,7 @@ const IndexPage = () => (
         />
         <Content>
           <h1>Projects</h1>
-          <p>
-            To ask about any project, email me at matheusguimr[at]gmail.com
-          </p>
+          <p>To ask about any project, email me at matheusguimr[at]gmail.com</p>
 
           <h2>Most recent personal projects</h2>
           <AboutSection
@@ -99,7 +97,7 @@ const IndexPage = () => (
           </p>
           <AboutSection
             title="An Optimized Approach to Huntington's Disease Detecting via Audio Signals Processing with Dimensionality Reduction "
-            href="#"
+            href="https://doi.org/10.1109/IJCNN48605.2020.9206773"
             date="2020"
           ></AboutSection>
           <AboutSection
