@@ -2,8 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
-import Img from "./image"
-import LinkBlank from "../components/linkBlank"
 
 import Emoji from "./emoji"
 
@@ -35,9 +33,8 @@ const LandingBio = () => (
             {` `}
             <Emoji symbol="🇧🇷" />
             <br />
-            Currently working as a Full Stack Developer at LAPISCO/Ceará state
-            gov partnership. Previously, Full Stack Developer at LAPISCO/Locktec
-            partnership.
+            Currently working as a Software Engineer intern.
+            Previously, Full Stack Developer at LAPISCO.
           </p>
         </Container>
       </OuterContainer>
