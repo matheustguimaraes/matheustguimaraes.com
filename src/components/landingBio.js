@@ -33,7 +33,7 @@ const LandingBio = () => (
             {` `}
             <Emoji symbol="🇧🇷" />
             <br />
-            Currently working as a Software Engineer intern.
+            Currently working as a Software Engineer Intern at Insight Lab.
             Previously, Full Stack Developer at LAPISCO.
           </p>
         </Container>
