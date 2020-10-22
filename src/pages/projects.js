@@ -36,6 +36,16 @@ const IndexPage = () => (
 
           <h2>Most recent personal projects</h2>
           <AboutSection
+            title="NoticiasUFC bot"
+            href="https://t.me/noticiasUFC"
+            date="2020"
+          >
+            News channel of the Federal University of Ceará (UFC). The channel's
+            news are collected from the page www.ufc.br/noticias and sent to
+            this channel by a bot.
+          </AboutSection>
+
+          <AboutSection
             title="Sr. Matuto"
             href="https://srmatuto.com"
             date="2020"
