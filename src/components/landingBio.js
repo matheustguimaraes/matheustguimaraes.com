@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 
+import AboutSection from "../components/aboutSection"
+
 import Emoji from "./emoji"
 
 const LandingBio = () => (
@@ -22,19 +24,17 @@ const LandingBio = () => (
         <Container>
           {/* <Img /> */}
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
-          <Description>
+          {/* <Description>
             <b>{data.site.siteMetadata.subtitle}</b>
-          </Description>
+          </Description> */}
+          <br />
           <p>
-            <Emoji symbol="👋" />
-            {` `}
-            Hey! My name is Matheus Guimarães. I'm a {` `}
-            <b>{data.site.siteMetadata.subtitle}</b> living in Brazil
-            {` `}
-            <Emoji symbol="🇧🇷" />
+            Hey! I'm a <b>Freelance Developer</b> and <b>Software Developer</b>{" "}
+            living in Brazil.
             <br />
-            Currently working as a Software Engineer Intern at Insight Lab.
-            Previously, Full Stack Developer at LAPISCO.
+            Currently working as a Software Engineer Intern at Insight Data Science Lab.
+            Previously, Full Stack Developer, Machine Learning researcher,
+            Embeeded Systems developer and Computer Science student.
           </p>
         </Container>
       </OuterContainer>
@@ -44,6 +44,11 @@ const LandingBio = () => (
 
 const Container = styled.div`
   text-align: center;
+`
+const Content = styled.div`
+  margin: 0 auto;
+  max-width: 860px;
+  padding: 1.45rem 1.0875rem;
 `
 
 const OuterContainer = styled.div`
