@@ -99,9 +99,9 @@ const MarkerHeader = styled.h3`
   border-radius: 1em 0 1em 0;
   background-image: linear-gradient(
     -100deg,
-    rgba(120, 255, 0, 0.15),
-    rgba(255, 0, 0, 0.8) 100%,
-    rgba(255, 100, 255, 0.25)
+    rgba(0, 0, 255, 0.15),
+    rgba(0, 0, 255, 0.8) 100%,
+    rgba(0, 0, 255, 0.25)
   );
 `
 
