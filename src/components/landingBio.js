@@ -29,12 +29,11 @@ const LandingBio = () => (
           </Description> */}
           <br />
           <p>
-            Hey! I'm a <b>Freelance Developer</b> and <b>Software Developer</b>{" "}
-            living in Brazil.
+            Hey! I'm a <b>Freelance Developer</b> living in Brazil.
             <br />
-            Currently working as a Software Engineer Intern at Insight Data Science Lab.
-            Previously, Full Stack Developer, Machine Learning researcher,
-            Embeeded Systems developer and Computer Science student.
+            Currently working as a Software Engineer Intern at Insight Data
+            Science Lab. Previously, Full Stack Developer, Machine Learning
+            researcher, Embeeded Systems developer and Computer Science student.
           </p>
         </Container>
       </OuterContainer>
