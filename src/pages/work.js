@@ -23,7 +23,7 @@ const IndexPage = () => (
     render={data => (
       <Layout>
         <SEO
-          title="About"
+          title="Work"
           keywords={[
             `Matheus T. Guimarães`,
             `Matheus Guimarães`,
