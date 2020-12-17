@@ -3,9 +3,8 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 
-import AboutSection from "../components/aboutSection"
-
-import Emoji from "./emoji"
+// import AboutSection from "../components/aboutSection"
+// import Emoji from "./emoji"
 
 const LandingBio = () => (
   <StaticQuery
@@ -29,7 +28,8 @@ const LandingBio = () => (
           </Description> */}
           <br />
           <p>
-            Hey! I'm a <b>Freelance Developer</b> living in Brazil.
+            Hey! I'm <b>founder</b> of <a href="https://qrlinks.co">QRlinks</a> and{" "}
+            <b>freelance developer</b> living in Brazil.
             <br />
             Currently working as a Software Engineer Intern at Insight Data
             Science Lab. Previously, Full Stack Developer, Machine Learning
@@ -44,11 +44,11 @@ const LandingBio = () => (
 const Container = styled.div`
   text-align: center;
 `
-const Content = styled.div`
-  margin: 0 auto;
-  max-width: 860px;
-  padding: 1.45rem 1.0875rem;
-`
+// const Content = styled.div`
+//   margin: 0 auto;
+//   max-width: 860px;
+//   padding: 1.45rem 1.0875rem;
+// `
 
 const OuterContainer = styled.div`
   display: flex;
@@ -58,11 +58,11 @@ const OuterContainer = styled.div`
   height: 78vh;
 `
 
-const Description = styled.p`
-  padding: 0;
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
-`
+// const Description = styled.p`
+//   padding: 0;
+//   margin-bottom: 1rem;
+//   font-size: 1.4rem;
+// `
 
 const NameHeader = styled.h1`
   font-size: 2rem;

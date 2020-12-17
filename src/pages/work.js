@@ -34,7 +34,17 @@ const IndexPage = () => (
         <Content>
           <p>To ask about any project, email me at matheusguimr[at]gmail.com</p>
 
-          <h1>Freelance projects and products</h1>
+          <h1>Projects and products</h1>
+
+          <AboutSection
+            title="QRlinks"
+            href="https://qrlinks.co"
+            date="2020"
+            metrics="Beta"
+          >
+            Create a landing page and QR codes for your business social
+            accounts.
+          </AboutSection>
 
           <AboutSection
             title="Sr. Matuto"
@@ -68,10 +78,6 @@ const IndexPage = () => (
             SaaS application to monitor cameras and applications in servers,
             using RestAPI written in Python 3, services can be added to Watchcam
             monitor and log operations. [Not launched yet]
-          </AboutSection>
-
-          <AboutSection title="[REDACTED]" href="#" date="2020">
-            [Not launched yet]
           </AboutSection>
 
           <h1>Personal projects</h1>
