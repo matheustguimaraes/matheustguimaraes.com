@@ -28,8 +28,7 @@ const LandingBio = () => (
           </Description> */}
           <br />
           <p>
-            Hey! I'm <b>founder</b> of <a href="https://qrlinks.co">QRlinks</a> and{" "}
-            <b>freelance developer</b> living in Brazil.
+            Hey! I'm <b>founder</b> of <a href="https://qrlinks.co">QRlinks</a>.
             <br />
             Currently working as a Software Engineer Intern at Insight Data
             Science Lab. Previously, Full Stack Developer, Machine Learning
