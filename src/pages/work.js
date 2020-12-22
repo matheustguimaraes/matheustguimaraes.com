@@ -148,8 +148,8 @@ const IndexPage = () => (
           <h1>Most recent scientific publications</h1>
 
           <p>
-            Most of papers covers topics like Machine Learning Computer Vision
-            and Medical imaging segmantion
+            Most papers cover topics like Machine Learning, Computer Vision, 
+            and Medical imaging segmentation
           </p>
 
           <AboutPaper
