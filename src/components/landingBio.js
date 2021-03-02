@@ -28,11 +28,10 @@ const LandingBio = () => (
           </Description> */}
           <br />
           <p>
-            Hey! I'm the <b>founder</b> of <a href="https://qrlinks.co">QRlinks</a>.
-            <br />
-            Currently working as a Software Engineer Intern at Insight Data
-            Science Lab. Previously, Full Stack Developer, Machine Learning
-            researcher, Embedded Systems developer and Computer Science student.
+            Frontend Developer based in Brazil. Currently working as a
+            Frontend Developer at AffilyAds. Previously, Full Stack Developer,
+            Machine Learning researcher, Embedded Systems developer and Computer
+            Science student.
           </p>
         </Container>
       </OuterContainer>
