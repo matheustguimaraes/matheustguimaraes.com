@@ -28,10 +28,11 @@ const LandingBio = () => (
           </Description> */}
           <br />
           <p>
-            Frontend Developer based in Brazil. Currently working as a
-            Frontend Developer at AffilyAds. Previously, Full Stack Developer,
-            Machine Learning researcher, Embedded Systems developer and Computer
-            Science student.
+            Frontend Developer based in Brazil.
+            <br />
+            Currently working as a Frontend Developer at AffilyAds. Previously,
+            Full Stack Developer, Machine Learning researcher, Embedded Systems
+            developer and Computer Science student.
           </p>
         </Container>
       </OuterContainer>
