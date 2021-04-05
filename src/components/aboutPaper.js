@@ -10,7 +10,6 @@ const aboutSection = props => (
     </GatsbyLink>
     <div>
       <PostDate>{props.date}</PostDate>
-      <Metrics>{props.metrics ? ` - ${props.metrics}` : ""}</Metrics>
     </div>
     <p>{props.children ? props.children : ""}</p>
   </div>
@@ -18,28 +17,23 @@ const aboutSection = props => (
 
 const PostDate = styled.h5`
   display: inline;
-  color: black;
+  color: #606060;
 `
 
-const MarkerHeader = styled.h3`
+const MarkerHeader = styled.h5`
   display: inline;
   border-radius: 1em 0 1em 0;
-  background-image: linear-gradient(
-    -100deg,
-    rgba(255, 223, 0, 0.15),
-    rgba(255, 223, 0, 80) 100%,
-    rgba(255, 223, 0, 80)
-  );
-`
-
-const Metrics = styled.h5`
-  display: inline;
-  color: #606060;
+  // background-image: linear-gradient(
+  //   -100deg,
+  //   rgba(120, 255, 0, 0.15),
+  //   rgba(255, 0, 0, 80) 100%,
+  //   rgba(255, 0, 0, 80)
+  // );
 `
 
 const GatsbyLink = styled(LinkBlank)`
   margin-left: 5px;
-  text-decoration: none;
+  text-decoration: none!important;
   color: inherit;
 `
 

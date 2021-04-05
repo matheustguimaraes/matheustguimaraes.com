@@ -3,7 +3,8 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 
-import Emoji from "./emoji"
+// import AboutSection from "../components/aboutSection"
+// import Emoji from "./emoji"
 
 const LandingBio = () => (
   <StaticQuery
@@ -22,19 +23,16 @@ const LandingBio = () => (
         <Container>
           {/* <Img /> */}
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
-          <Description>
+          {/* <Description>
             <b>{data.site.siteMetadata.subtitle}</b>
-          </Description>
+          </Description> */}
+          <br />
           <p>
-            <Emoji symbol="👋" />
-            {` `}
-            Hey! My name is Matheus Guimarães. I'm a {` `}
-            <b>{data.site.siteMetadata.subtitle}</b> living in Brazil
-            {` `}
-            <Emoji symbol="🇧🇷" />
+            Frontend Developer based in Brazil.
             <br />
-            Currently working as a Software Engineer intern.
-            Previously, Full Stack Developer at LAPISCO.
+            Currently working as a Frontend Developer at AffilyAds. Previously,
+            Full Stack Developer, Machine Learning researcher, Embedded Systems
+            developer and Computer Science student.
           </p>
         </Container>
       </OuterContainer>
@@ -45,6 +43,11 @@ const LandingBio = () => (
 const Container = styled.div`
   text-align: center;
 `
+// const Content = styled.div`
+//   margin: 0 auto;
+//   max-width: 860px;
+//   padding: 1.45rem 1.0875rem;
+// `
 
 const OuterContainer = styled.div`
   display: flex;
@@ -54,11 +57,11 @@ const OuterContainer = styled.div`
   height: 78vh;
 `
 
-const Description = styled.p`
-  padding: 0;
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
-`
+// const Description = styled.p`
+//   padding: 0;
+//   margin-bottom: 1rem;
+//   font-size: 1.4rem;
+// `
 
 const NameHeader = styled.h1`
   font-size: 2rem;
