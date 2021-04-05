@@ -3,7 +3,7 @@
   matheustguimaraes.com
 </h1>
 
-Matheus Guimarães blog and website.
+Matheus Guimarães website.
 
 ## 🚀 To clone this repository
 
